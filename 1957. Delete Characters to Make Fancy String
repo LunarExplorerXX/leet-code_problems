@@ -1,0 +1,23 @@
+1957. Delete Characters to Make Fancy String
+https://leetcode.com/problems/delete-characters-to-make-fancy-string/description/?envType=daily-question&envId=2024-11-01
+
+class Solution {
+    public String makeFancyString(String s) {
+        StringBuilder result = new StringBuilder();
+        for (char c : s.toCharArray()) {
+            int len = result.length();
+            if (len >= 2 && result.charAt(len - 1) == c && result.charAt(len - 2) == c) {
+                continue;
+            }
+            result.append(c);
+        }
+        return result.toString();
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        System.out.println(solution.makeFancyString("leeetcode"));  // Output: "leetcode"
+        System.out.println(solution.makeFancyString("aaabaaaa"));   // Output: "aabaa"
+        System.out.println(solution.makeFancyString("aab"));        // Output: "aab"
+    }
+}
