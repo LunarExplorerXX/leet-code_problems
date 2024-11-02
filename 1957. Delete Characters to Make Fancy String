@@ -10,7 +10,7 @@ Here's how it would look in your GitHub README:
 
 ### Solution
 
-```cpp
+```java
 class Solution {
     public String makeFancyString(String s) {
         StringBuilder result = new StringBuilder();
