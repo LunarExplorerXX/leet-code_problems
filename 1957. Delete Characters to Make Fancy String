@@ -1,7 +1,15 @@
-1957. Delete Characters to Make Fancy String
-https://leetcode.com/problems/delete-characters-to-make-fancy-string/description/?envType=daily-question&envId=2024-11-01
+### Explanation:
+- Use triple backticks (```) to start and end the code block.
+- Specify the language (`java`) immediately after the opening backticks for syntax highlighting.
 
-code:
+### Example in Markdown:
+Here's how it would look in your GitHub README:
+
+```markdown
+## LeetCode Problem 1957 - Delete Characters to Make Fancy String
+
+### Solution
+
 ```java
 class Solution {
     public String makeFancyString(String s) {
@@ -23,4 +31,3 @@ class Solution {
         System.out.println(solution.makeFancyString("aab"));        // Output: "aab"
     }
 }
-```
